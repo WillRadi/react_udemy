@@ -9,6 +9,9 @@ const Events = () => {
       <div>
         <button onClick={handleClick}>Evento de clique</button>
       </div>
+      <div>
+        <button onClick={() => console.log('vc clicou direto na função')}>Clique na função direto dentro do evento</button>
+      </div>
     </div>
   )
 }
