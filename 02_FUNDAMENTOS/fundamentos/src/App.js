@@ -2,6 +2,7 @@
 import FirstComponent from './components/firstComponent'
 import TemplateExpressions from './components/templateExpressions'
 import MyComponent from './components/myComponent'
+import Events from './components/Events'
 
 // style
 import './App.css';
@@ -13,6 +14,7 @@ function App() {
       <FirstComponent />
       <TemplateExpressions />
       <MyComponent />
+      <Events />
     </div>
   );
 }
