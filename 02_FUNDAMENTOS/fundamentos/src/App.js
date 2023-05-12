@@ -1,6 +1,7 @@
 // components
 import FirstComponent from './components/firstComponent'
 import TemplateExpressions from './components/templateExpressions'
+import MyComponent from './components/myComponent'
 
 // style
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
       <h1>Teste do primeiro parágrafo</h1>
       <FirstComponent />
       <TemplateExpressions />
+      <MyComponent />
     </div>
   );
 }
