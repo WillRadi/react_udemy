@@ -4,6 +4,14 @@ const Events = () => {
     console.log('clicou')
   }
 
+  const printSomething = (param) => {
+    if (param) {
+      return <p>Parâmetro true</p>
+    } else {
+      return <p>Parâmetro false</p>
+    }
+  }
+
   return (
     <div>
       <div>
@@ -12,6 +20,7 @@ const Events = () => {
       <div>
         <button onClick={() => console.log('vc clicou direto na função')}>Clique na função direto dentro do evento</button>
       </div>
+      {printSomething(false)}
     </div>
   )
 }
