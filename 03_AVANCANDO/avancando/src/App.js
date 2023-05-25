@@ -1,6 +1,7 @@
 import './App.css';
-import Coala from './assets/coala.jpg'
-import ManageData from './components/manageData'
+import Coala from './assets/coala.jpg';
+import ListRender from './components/ListRender';
+import ManageData from './components/ManageData';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <h3>useState</h3>
       <div>
         <ManageData />
+        <ListRender />
       </div>
     </div>
   );
