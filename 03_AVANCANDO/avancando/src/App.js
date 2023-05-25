@@ -1,5 +1,6 @@
 import './App.css';
 import Coala from './assets/coala.jpg'
+import ManageData from './components/manageData'
 
 function App() {
   return (
@@ -11,9 +12,12 @@ function App() {
         {/* Imagem em public = basta passar /nome_do_arquivo.jpg */}
       </div>
       <h3>Esta imagem está em src</h3>
-        <img src={Coala} alt="coala" />
       <div>
-
+        <img src={Coala} alt="coala" />
+      </div>
+      <h3>useState</h3>
+      <div>
+        <ManageData />
       </div>
     </div>
   );
