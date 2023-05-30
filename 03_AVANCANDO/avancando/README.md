@@ -28,3 +28,10 @@ Geral:
     <div>aqui vem o SJX</div>
   ) }
 
+## Props
+
+* Passar valores de um componente pai pro filho
+* Props vem em um objeto no argumento da função do componente
+  ```jsx
+    <ComponenteFilho propName="valor">
+  ```

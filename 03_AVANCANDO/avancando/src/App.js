@@ -3,6 +3,7 @@ import Coala from './assets/coala.jpg';
 import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
+import ShowUserName from './components/ShowUserName';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <ManageData />
         <ListRender />
         <ConditionalRender />
+        <ShowUserName name="Tobias" />
       </div>
     </div>
   );
