@@ -6,6 +6,12 @@ import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 
+const cars = [
+  {id: 1, brand: 'Fiat', km: 0, color: 'Branco', newCar: true},
+  {id: 2, brand: 'GM', km: 11120, color: 'Amarelo', newCar: false},
+  {id: 3, brand: 'Ferrari', km: 12321, color: 'Vermelho', newCar: false}
+]
+
 function App() {
   return (
     <div className="App">
@@ -26,7 +32,11 @@ function App() {
         <ConditionalRender />
         <ShowUserName name="Tobias" />
         {/* Props com destructuring */}
-        <CarDetails brand="VW" km={12333} color="Branco" />
+        <CarDetails brand="VW" km={12333} color="Branco" newCar={false} />
+        {/* Perguntar pro Almir: pq q aqui tem q ser parêntese e não chaves?? */}
+        {cars.map((car) => (
+          <CarDetails key={car.id} brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
+        ))}
       </div>
     </div>
   );
