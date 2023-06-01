@@ -5,6 +5,7 @@ import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
+import Container from './components/Container';
 
 const cars = [
   {id: 1, brand: 'Fiat', km: 0, color: 'Branco', newCar: true},
@@ -37,6 +38,9 @@ function App() {
         {cars.map((car) => (
           <CarDetails key={car.id} brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
         ))}
+        <Container anotherProp="isso é uma prop">
+          <p>Isso está sendo escrito diretamente no App</p>
+        </Container>
       </div>
     </div>
   );

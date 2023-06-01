@@ -35,3 +35,32 @@ Geral:
   ```jsx
     <ComponenteFilho propName="valor">
   ```
+
+* Podemos passar props com destructuring:
+```js
+const Componente = ({ prop1, prop2 }) => {}
+```
+
+* sem destructuring:
+```js
+const Componente = (props) => {
+  return ( <>{props.prop1}</> )
+}
+```
+
+## React Fragments
+
+* Usado pra 'simular' mais de um pai em um componente
+* inicia o JSX sem uma div, pra n estragar o html: <> ..... </>
+## Children prop
+
+* Usamos pra renderizar html entre tas tags que chamam um componente:
+
+```jsx
+<Componente>
+  <p>HTML que vai dentro do componente</p>
+</Componente>
+```
+
+* Dentro do componente, a `children prop` deve ser chamada como `children`
+* Podemos chamar outras propriedades normalmente
