@@ -48,11 +48,7 @@ const Componente = (props) => {
 }
 ```
 
-## React Fragments
-
-* Usado pra 'simular' mais de um pai em um componente
-* inicia o JSX sem uma div, pra n estragar o html: <> ..... </>
-## Children prop
+### Children prop
 
 * Usamos pra renderizar html entre tas tags que chamam um componente:
 
@@ -64,3 +60,18 @@ const Componente = (props) => {
 
 * Dentro do componente, a `children prop` deve ser chamada como `children`
 * Podemos chamar outras propriedades normalmente
+
+### Funções como prop
+
+* Função criada no componente pai e passada para o filho por meio de prop
+```jsx
+// Componente pai
+const function propFunction = ({...})
+
+<ComponenteFilho myFunction={propFunction} />
+```
+
+## React Fragments
+
+* Usado pra 'simular' mais de um pai em um componente
+* inicia o JSX sem uma div, pra n estragar o html: <> ..... </>

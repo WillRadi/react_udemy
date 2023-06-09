@@ -6,12 +6,17 @@ import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 import Container from './components/Container';
+import FunctionAsProp from './components/FunctionAsProp';
 
 const cars = [
   {id: 1, brand: 'Fiat', km: 0, color: 'Branco', newCar: true},
   {id: 2, brand: 'GM', km: 11120, color: 'Amarelo', newCar: false},
   {id: 3, brand: 'Ferrari', km: 12321, color: 'Vermelho', newCar: false}
 ]
+
+const showMessage = () => {
+  console.log('clicou no componente')
+}
 
 function App() {
   return (
@@ -41,6 +46,7 @@ function App() {
         <Container anotherProp="isso é uma prop">
           <p>Isso está sendo escrito diretamente no App</p>
         </Container>
+        <FunctionAsProp myProp={showMessage} />
       </div>
     </div>
   );
