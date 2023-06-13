@@ -9,6 +9,7 @@ import Container from './components/Container';
 import FunctionAsProp from './components/FunctionAsProp';
 import Message from './components/Message';
 import ChangeMessage from './components/ChangeMessage';
+import UserList from './components/UserList';
 import { useState } from 'react';
 
 function App() {
@@ -52,12 +53,14 @@ function App() {
           <CarDetails key={car.id} brand={car.brand} km={car.km} color={car.color} newCar={car.newCar} />
         ))}
         <Container anotherProp="isso é uma prop">
-          <p>Isso está sendo escrito diretamente no App</p>
+          <p>Isso está sendo escrito diretamente no App. É a prop children</p>
         </Container>
         <FunctionAsProp myProp={showMessage} />
         {/* State lift */}
         <Message msg={message} />
         <ChangeMessage handleMessage={handleMessage} />
+        <h2>Chalege</h2>
+        <UserList />
       </div>
     </div>
   );
