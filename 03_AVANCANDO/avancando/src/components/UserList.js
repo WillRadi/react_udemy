@@ -11,18 +11,19 @@ const UserList = () => {
   return (
     <div>
       <table>
-        <tr>
-          <th>Nome</th>
-          <th>Idade</th>
-          <th>Profissão</th>
-          <th>Pode tirar CNH</th>
-        </tr>
-        {userDb.map((user) => (
-          <UserDetails name={user.name} age={user.age} occupation={user.occupation}/>
-        ))}
-        <tr>
-
-        </tr>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+            <th>Pode tirar CNH</th>
+          </tr>
+        </thead>
+        <tbody>
+          {userDb.map((user) => (
+            <UserDetails key={user.id} name={user.name} age={user.age} occupation={user.occupation}/>
+          ))}
+        </tbody>
       </table>
     </div>
   )
