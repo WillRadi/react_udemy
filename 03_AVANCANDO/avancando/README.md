@@ -75,3 +75,16 @@ const function propFunction = ({...})
 
 * Usado pra 'simular' mais de um pai em um componente
 * inicia o JSX sem uma div, pra n estragar o html: <> ..... </>
+
+## State lift
+
+* Leva um valor do componente filho pro pai
+* Geralmente:
+  * Componente pai gerencia os estados:
+    * Um componente filho altera o estado
+    * Outro componente filho usa o estado
+
+* Componente pai com gerenciando um estado (useState declarado nele)
+* Componente pai tbm tem uma forma de alterar o estado (handleMessage)
+* Componente filho q consome o estado (recebe ele por prop)
+* Componente filho q altera o estado (handleMessage por prop)
