@@ -29,3 +29,21 @@
 
 * Alternativa mais interessante do que deixar estilos dinâmicos inline
 * Muda-se a classe do css dinamicamente
+
+## CSS modules
+
+* É um recurso scoped, ou seja, podemos trabalhar com um css pra cada componente, sem vazamentos
+* Convençãopro nome do componente: Componente.module.css
+* Diferenças pra uso:
+  * Na hora de importar o css dentro do componente:
+    ```js
+    import styles from "./Componente.module.css"
+    ```
+
+  * Para usar o estilo na classe (em ordem de melhor uso):
+    ```jsx
+    <elemento className={styles.my-style}></elemento>
+    <elemento className={styles["my-style"]}></elemento>
+    <elemento className={styles.my_style}></elemento>
+    ```
+    Lembrando q em JS, pode-se chamar um attr do obj como se fosse um elemento de hash
