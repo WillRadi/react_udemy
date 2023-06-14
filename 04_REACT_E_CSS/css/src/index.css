@@ -8,3 +8,13 @@ body {
 h1 {
   color: red;
 }
+
+.red-title {
+  color: #f5425d;
+  background-color: #661d28;
+}
+
+.title {
+  color: white;
+  background-color: black;
+}

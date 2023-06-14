@@ -22,3 +22,10 @@
   // valores sempre entre aspas, como qualquer objeto JS
   <elemento style={{ atributo: "valor", atributoCamelCase: "valor"}}>
 ```
+
+* É possível aplicar condicionais para deixar o estilo inlne dinâmico
+
+## Classes dinâmicas no CSS
+
+* Alternativa mais interessante do que deixar estilos dinâmicos inline
+* Muda-se a classe do css dinamicamente
