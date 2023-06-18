@@ -8,12 +8,15 @@ const MyForm = () => {
     setName(e.target.value)
   }
 
-  console.log(name);
-  console.log(email);
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    console.log(name)
+    console.log(email)
+  }
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Nome:</label>
           <input type="text" name="name" placeholder="Digite seu nome..."  onChange={handleName} />

@@ -16,3 +16,9 @@
 * Modo 2:
   * Mesmo esquema do modo 1, mas passando a função do onChange inline
   * função "handle" se torna desnecessária
+
+## Envio de formulário
+
+* Usa-se o evento `onSubmit` na tag `form` (geralmente a função é chamada de handleSubmit, seguindo o padrão de funções chamadas a partir de eventos, iniciarem com `handle`)
+* Usar sempre o preventDefault pra evitar recarregar a página
+* Nessa etapa que fazemos validações, envio de dados pro BE, reset dos dados, etc
