@@ -28,3 +28,12 @@
 * Usado para preencher dados na propriedade `value` de um input
 * Geralmente usado em formulários de edição, no qual já existem dados preenchidos do BE
 * Preenchemos o valor default do useState referente ao campo com o valor do BE
+
+## Outros tipos de input
+
+* Textarea: identico ao input text (usa-se apenas outra tag: textarea, q tem abertura e fechamento)
+* Select:
+  * usamos a tag `select` q tem abertura e fechamento
+  * dentro da tag, usamos as tags `option` para cada opção
+    * cada `option` tem q ter a propriedade `value`, q é o que importa pro BE
+  * pega os valores como em qqr outra tag: com o evento `onChange`

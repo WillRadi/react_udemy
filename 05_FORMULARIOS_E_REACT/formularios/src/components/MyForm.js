@@ -3,6 +3,7 @@ import { useState } from 'react'
 const MyForm = ({user}) => {
   const [name, setName] = useState(user ? user.name : '')
   const [email, setEmail] = useState(user ? user.email : '')
+  const [role, setRole] = useState(user ? user.role : '')
 
   const handleName = (e) => {
     setName(e.target.value)
@@ -12,6 +13,12 @@ const MyForm = ({user}) => {
     event.preventDefault()
     console.log(name)
     console.log(email)
+    console.log(role)
+
+    // Limpa campos após envio
+    setName('')
+    setEmail('')
+    setRole('')
   }
 
   return (
@@ -38,6 +45,18 @@ const MyForm = ({user}) => {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
+        </label>
+        <label>
+          <span>Função</span>
+          <select
+            name='role'
+            onChange={(e) => setRole(e.target.value)}
+            value={role}
+          >
+            <option value="admin">Admin</option>
+            <option value="peao">Peão</option>
+            <option value="boiadeiro">Boiadeiro</option>
+          </select>
         </label>
         <input type="submit" value="Enviar" />
       </form>

@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Meu primeiro formulário</h1>
-      <MyForm user={{name: "Tobias", email: "tobias@pug.com"}} />
+      <MyForm user={{name: "Tobias", email: "tobias@pug.com", role: "peao"}} />
     </div>
   );
 }
