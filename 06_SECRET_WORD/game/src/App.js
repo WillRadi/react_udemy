@@ -1,9 +1,10 @@
 import './App.css';
+import StartScreen from './components/StartScreen';
 
 function App() {
   return (
     <div className="App">
-      <h2>Roda a roda Jequiti</h2>
+      <StartScreen />
     </div>
   );
 }
